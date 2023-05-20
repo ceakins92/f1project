@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Results</title>
+    <link rel="stylesheet" href="./static/css/main.css" />
+    <link href=“https://fonts.googleapis.com/css?family=Fjalla+One”
+    rel=“stylesheet”>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="color: white">
+          F1|<small>
+            <font style="color: crimson"><strong>results</strong></font> </small
+          >|
+        </h1>
+      </div>
+    </div>
+    <main class="container">
+      <center>
+        <section class="content">
+          <font style="color: white">
+            <br />Select season year and round to view F1 winners:<br />
+          </font>
+          <font style="color: crimson">
+            <form name="inputselector" id="inputselector">
+              <label for="selectseason">Select Season</label>
+              <input type="text" name="selectseason" id="selectseason" />
+
+              <label for="selectround">Select Round</label>
+              <input type="text" name="selectround" id="selectround" />
+
+              <button type="submit" id="submitButton" class="buttonClass">
+                See Results
+              </button>
+            </form>
+            <br /><br />
+          </font>
+          <div class="lower" id="lowerDiv">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" class="divposition">
+                    <font style="color: rgb(240, 219, 31)">Position</font>
+                  </th>
+                  <th scope="col" class="divname">
+                    <font style="color: rgb(240, 219, 31)">Name</font>
+                  </th>
+                  <th scope="col" class="divnationality">
+                    <font style="color: rgb(240, 219, 31)">Nationality</font>
+                  </th>
+                  <th scope="col" class="divsponsor">
+                    <font style="color: rgb(240, 219, 31)">Sponsor</font>
+                  </th>
+                  <th scope="col" class="divpoints">
+                    <font style="color: rgb(240, 219, 31)">Points</font>
+                  </th>
+                </tr>
+              </thead>
+              <br />
+              <tbody id="resultstable"></tbody>
+            </table>
+          </div>
+          <br /><br />
+        </section>
+      </center>
+      <!--Using The DOM to Grab Form Data-->
+    </main>
+  </body>
+</html>
